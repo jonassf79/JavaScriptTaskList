@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+        
+        <form id="task-form">
+            <input type="text" id="task-title" placeholder="Nome da Tarefa" required>
+            <textarea id="task-desc" placeholder="Descrição"></textarea>
+            <select id="task-status">
+                <option value="pendente">Pendente</option>
+                <option value="andamento">Em Andamento</option>
+                <option value="concluido">Concluído</option>
+            </select>
+            <button type="submit">Adicionar Tarefa</button>
+        </form>
+
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

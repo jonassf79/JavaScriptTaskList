@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Garante que input e select tenham o mesmo tamanho */
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Evita que o padding afete o tamanho */
+}
+
+/* Define o campo de descrição com altura fixa, 3x maior */
+textarea {
+    width: 100%;
+    height: 90px; /* Triplo da altura dos outros */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Impede o usuário de redimensionar */
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+li strong {
+    font-size: 18px;
+}
+
+.status {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+.pendente { background: orange; }
+.andamento { background: blue; }
+.concluido { background: green; }
+
+small {
+    display: block;
+    margin-top: 5px;
+    color: #777;
+}
+
+li button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+li button:hover {
+    background: darkred;
+}
